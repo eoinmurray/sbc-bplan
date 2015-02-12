@@ -1,0 +1,25 @@
+{
+  "name": "projects",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "init": "sudo npm i bower -g && sudo npm i gulp -g && sudo npm i jsx -g && npm i",
+    "dev": "npm i && gulp server",
+    "build": "npm i && gulp build",
+    "deploy": "npm i && gulp build && sh deploy.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.5.1",
+    "gulp-imagemin": "~0.1.4",
+    "gulp-usemin": "~0.1.3",
+    "gulp-htmlmin": "~0.1.1",
+    "gulp-clean": "~0.2.4",
+    "connect": "~2.12.0",
+    "gulp-react": "~0.1.2",
+    "gulp-util": "~2.2.14",
+    "multipipe": "0.0.1"
+  }
+}
