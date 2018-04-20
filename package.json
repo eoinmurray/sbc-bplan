@@ -4,22 +4,42 @@
   "engines": {
     "node": ">=0.8.0"
   },
+  "now":{
+    "alias": "bplan.eoin.xyz"
+  },
   "scripts": {
     "init": "sudo npm i bower -g && sudo npm i gulp -g && sudo npm i jsx -g && npm i",
     "dev": "npm i && gulp server",
     "build": "npm i && gulp build",
     "deploy": "npm i && gulp build && sh deploy.sh"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bower": "^1.8.4"
+  },
   "devDependencies": {
-    "gulp": "~3.5.1",
-    "gulp-imagemin": "~0.1.4",
-    "gulp-usemin": "~0.1.3",
-    "gulp-htmlmin": "~0.1.1",
-    "gulp-clean": "~0.2.4",
     "connect": "~2.12.0",
+    "gulp": "~3.5.1",
+    "gulp-clean": "~0.2.4",
+    "gulp-htmlmin": "~0.1.1",
+    "gulp-imagemin": "~0.1.4",
     "gulp-react": "~0.1.2",
+    "gulp-usemin": "~0.1.3",
     "gulp-util": "~2.2.14",
     "multipipe": "0.0.1"
-  }
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eoinmurray/sbc-bplan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eoinmurray/sbc-bplan/issues"
+  },
+  "homepage": "https://github.com/eoinmurray/sbc-bplan#readme",
+  "description": ""
 }
